@@ -24,7 +24,7 @@ func Parser() []*Profile {
 		name := section.Name()
 		name = strings.TrimSpace(strings.Replace(name, "profile ", "", 1))
 		mfa := section.Key("mfa_serial").String()
-		roleArn := section.Key("mfa_serial").String()
+		roleArn := section.Key("role_arn").String()
 		sourceProfile := section.Key("source_profile").String()
 
 		profiles = append(profiles, &Profile{
