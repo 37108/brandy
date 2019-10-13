@@ -1,4 +1,4 @@
-project_name: brandy
+project_name: aws-brandy
 env:
   - GO111MODULE=on
 before:
@@ -27,10 +27,10 @@ changelog:
 release:
   github:
     owner: 37108
-    name: brandy
+    name: aws-brandy
 brews:
   -
-    name: brandy
+    name: aws-brandy
     github:
       owner: 37108
       name: homebrew-tap
