@@ -27,7 +27,8 @@ release:
     owner: 37108
     name: brandy
 brews:
-  name: brandy
-  github:
-    owner: "37108"
-    name: homebrew-tap
+  -
+    name: brandy
+    github:
+      owner: 37108
+      name: homebrew-tap
