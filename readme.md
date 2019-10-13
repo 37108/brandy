@@ -3,16 +3,25 @@
 </div>
 <br />
 
-## Usage
+![gif](./docs/screenshot.gif)
 
 ## Install
+```
+$ brew tap 37108/homebrew-tap
+$ brew install aws-brandy
+```
 
 ## Configuration
 I strongly reccomend to create an alias like this.  
 This alias automatically set environment.
 
 ```
-alias brandy='`brandy`'
+alias brandy='`aws-brandy`'
+```
+
+## Usage
+```
+$ brandy
 ```
 
 ## Contributing
