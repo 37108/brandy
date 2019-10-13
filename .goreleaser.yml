@@ -27,7 +27,7 @@ changelog:
 release:
   github:
     owner: 37108
-    name: aws-brandy
+    name: brandy
 brews:
   -
     name: aws-brandy
