@@ -11,14 +11,14 @@ func main() {
 	profiles := config.Parser()
 	idx, err := finder.Finder(profiles)
 	if err != nil {
-		fmt.Println(err)
+		panic(err)
 	}
 	profile := profiles[idx]
 
-	sess, err := config.ObtainSession(profile)
+	client, err := config.Client(profile)
 	if err != nil {
-		fmt.Println(err)
+		panic(err)
 	}
-
-	config.SessionToEnv(sess)
+	credentials, _ := client.Credentials.Retrieve()
+	fmt.Printf("export AWS_ACCESS_KEY_ID=%s export AWS_SECRET_ACCESS_KEY=%s export AWS_SESSION_TOKEN=%s", credentials.AccessKeyID, credentials.SecretAccessKey, credentials.SessionToken)
 }
